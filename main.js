@@ -44,7 +44,9 @@ app.get("/login",function(req,res){
 	 res.send("its working ");
 })
 
-
+app.get("*",function(req,res){
+   res.send("Exam Portal Server");
+})
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
 })
